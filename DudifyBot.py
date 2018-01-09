@@ -22,7 +22,6 @@ def spotify_translator(url):
 
     elif "artist" in url:
         artist = sp.artist(url)['name']
-        print(artist)
         searching = lastfm_connetion.get_artist(artist_name=artist)
 
     elif "track" in url:
